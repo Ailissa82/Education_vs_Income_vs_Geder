@@ -1,0 +1,35 @@
+
+#map-id {
+  height: 550px;
+  width: 1350px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.jumbotron-special {
+  position: relative;
+  height: 600px;
+  padding: 20px;
+  margin: 0;
+  background: whitesmoke;
+  background-image: url("../images/education-1-1.png");
+  /* background-image: url("../images/nasa.jpg"); */
+  /* background-attachment: fixed; */
+  background-position: bottom center;
+  background-size: cover;
+} 
+
+#navbarNavDropdown{ 
+  font-display: white;
+}
+
+.text{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.vis_compare{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

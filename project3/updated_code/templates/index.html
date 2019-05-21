@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kansas Income by Education and Population</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  
+  
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-lg-4 navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">My Little Pandas Foundation</a>
+    </div>
+    <div class="col-lg-8 navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark float-right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/comparisons">Comparisons</a>
+              </div>
+            </li>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/analysis">Analysis</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/data">Earned Income Data </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/heatmap">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pastdata">Past Data</a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container" style="padding: 10px;">
+    <div class="row">
+      <!-- The Jumbotron will have the picture of the education in the .css -->
+        <div data-aos="zoom-in" class="col-md-12 jumbotron jumbotron-special text-center">
+        </div>
+      
+    </div>
+    <!-- <div class="row col-md-12 text"> -->
+      <!-- Description of the Problem, Data Used, Analysis Notes -->
+      <!-- <h2 class="text"> Foundation Goal </h2>
+      <div class="row col-sm-12">
+        <ul> 
+          <h4>Determine if there is a positive correlation between higher earnings and higher levels of education.
+          </h4>
+          <li><h6>Is there a financial benefit of pursuing higher level education? </h6></li>
+          <li><h6>How does the county size impact median earnings? </h6></li>
+          <li><h6>What is the wage gap between men and women based on different factors? </h6> </li>
+          <li><h6>What is the wage gap between race based on different factors? </h6></li>
+        </ul>
+      </div>
+      <div class="row col-sm-12">
+        <u1>
+          <h3>Data Sources </h3>
+          <h6> <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk"> United
+              State Census American Fact Results</a></h6>
+        </u1>
+      </div>
+      <div class="row col-sm-12 text">
+        <h3>Analysis Notes </h3>
+      </div>
+      <div class="row col-sm-12"></div>
+      <ul>
+        <h4> Noted issues in the data and findings. </h4> -->
+        <!-- <li><h6> Noted issues in the data and findings. </h6></li>
+      </ul>
+      <div class="row col-sm-12 text">
+        <h3>May 2019 Analysis </h3>
+        </div>
+        <div class="row col-sm-12"></div>
+      <ul>
+        <h4> Noted issues in the data and findings. </h4>
+          <li><h6> Noted issues in the data and findings. </h6></li>
+      </ul>
+      <div class="row col-sm-12 text">
+        <h3>March 2019 Analysis</h3>
+      </div>
+      <div class="row col-sm-12"></div>
+        <ul> -->
+          <!-- <h4> Noted issues in the data and findings. </h4> -->
+          <!-- <li><h6>Income levels across the education levels do vary on the county type.</h6></li>
+          <li><h6>Urban and Metro counties Median income is higher than in the more rural counties.</h6></li>
+          <li><h6>What we don’t have data on is the efforts the rural counties are making to recruit from the larger
+            counties impacting income. This may be supported in the BA and Grad Income categories.</h6></li>
+          <li><h6>Higher levels of education lead to higher median income. </h6></li>
+          <li><h6>Income disparity in the Urban and Metro areas are noticeable. </h6></li>
+          <li><h6>Degrees appear to influence income more in the larger counties possibly due to additional competition.
+          </h6></li>
+          <li><h6>There is a benefit to getting a masters or professional degree regardless of the county. </h6></li>
+          <li><h6>High school degrees are critical to remaining above the poverty line especially in the Urban and Metro
+            counties. </h6></li>
+        </ul>
+    </div> -->
+
+      <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+     
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script> AOS.init();</script>
+
+
+</body>
+
+</html>
